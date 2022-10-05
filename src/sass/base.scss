@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+$bp-largest: 93.75em; // 1500px
+$bp-large: 75em; //1200px
+$bp-medium: 56.25em; //900px
+$bp-small: 31.25em; //500px
+$bp-smallest: 22.4em; //360px
+$font-ubuntu: 'Ubuntu', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 62%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 38%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 32%;
+    }
+}
+
+body {
+    font-family: $font-ubuntu;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.6;    
+    min-height: 100vh;
+}
+
+
